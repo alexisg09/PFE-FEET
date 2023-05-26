@@ -16,3 +16,18 @@ body {
   height: 100%;
 }
 
+.checkbox.checked {
+  background-color: #508C97; 
+  color: white;
+}
+
+.checkbox-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.checkbox-label.checked {
+  color: white;
+
+}
+

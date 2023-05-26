@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Home({advices}: any) {
 
-  console.log('Calendar :::',advices)
+  // console.log('Calendar :::',advices)
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
@@ -27,24 +27,24 @@ export default function Home({advices}: any) {
 }
 
 
-export async function getStaticProps() {
+// export async function getStaticProps() {
 
 
 
-  const  { data } = await queryClient.query({
-    query: gql
-    `query {
-        advices {
-        id
-      }
-    }`
-  })
+//   const  { data } = await queryClient.query({
+//     query: gql
+//     `query {
+//         advices {
+//         id
+//       }
+//     }`
+//   })
 
-const {advices} = data
-return {
-  props: {
-    advices
-  }
-}
+// const {advices} = data
+// return {
+//   props: {
+//     advices
+//   }
+// }
 
-}
+// }
