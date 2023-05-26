@@ -3,9 +3,7 @@
 import Link from "next/link";
 import Title from "@/components/global/Title";
 import Subtitle from "@/components/global/Subtitle";
-import Checkbox from "@/components/input/Checkbox";
 import { useState } from "react";
-import IconCheckbox from "@/components/input/IconCheckbox";
 
 
 
@@ -24,7 +22,7 @@ export default function Home() {
 }
 
 
-export async function getStaticProps() {
+// export async function getStaticProps() {
 //   const  { data, error } = await queryClient.query({
 //     query: gql
 //     `{
@@ -53,4 +51,4 @@ export async function getStaticProps() {
 //   }
 // }
 
-}
+// }
