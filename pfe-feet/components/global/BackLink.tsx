@@ -11,7 +11,7 @@ interface BackLinkProps {
 
 const BackLink = ({title, path}: BackLinkProps) => {
     return (
-        <div className="flex items-center justify-center w-full">
+        <div className="flex w-full">
             <Link href={path}>
                 <div className="flex items-center justify-center w-full">
                     <TbChevronLeft className="text-gray-500 text-2xl" />

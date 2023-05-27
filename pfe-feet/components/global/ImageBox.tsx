@@ -10,8 +10,8 @@ type ImageBoxProps = {
 
 const ImageBox = ({ bgImg }: ImageBoxProps) => {
     return (
-        <div className="w-16 h-16 rounded-md bg-fixed bg-cover bg-center shrink-0">
-            <Image src={bgImg} className="min-w-full min-h-full object-cover rounded-md" alt="bgImg"/>
+        <div className="w-14 h-14 rounded-md bg-fixed bg-cover bg-center shrink-0">
+            <Image src={bgImg} width={56} height={56} className="min-w-full min-h-full object-cover rounded-md" alt="bgImg"/>
         </div>
     )
 }

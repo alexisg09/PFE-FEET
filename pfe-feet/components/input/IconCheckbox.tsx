@@ -4,13 +4,13 @@ type IconCheckboxProps = {
     label: string;
     checked: boolean;
     icon: string;
-    onChange: () => void;
+    onChange: any;
 }
 
 const IconCheckbox = ({ label, checked, onChange, icon }: IconCheckboxProps) => {
     return (
         <div className="flex flex-col items-center gap-1">
-            <div className={`checkbox w-full h-full flex flex-col justify-center items-center cursor-pointer border-[#464646] border-1 ${checked ? 'checked' : ''}`} onClick={onChange}>
+            <div className={`checkbox w-auto h-full flex flex-col justify-center items-center cursor-pointer border-[#464646] border-1 ${checked ? 'checked' : ''}`} onClick={onChange}>
                  <div className="flex justify-center items-center checkbox-icon w-full p-2">
                     <Image src={icon} width={30} height={30} alt="icon"/>
                  </div>

@@ -11,6 +11,7 @@ import {
 } from "date-fns";
 import styles from './Calendar.module.css';
 import fr from "date-fns/locale/fr";
+import { TbChevronLeft, TbChevronRight } from "react-icons/tb";
 
 
 
@@ -24,14 +25,11 @@ const Calendar = ({ showDetailsHandle }: CalendarProps ) => {
   const [selectedDate, setSelectedDate] = useState(new Date());
 
   const changeWeekHandle = (btnType: string) => {
-    //console.log("current week", currentWeek);
     if (btnType === "prev") {
-      //console.log(subWeeks(currentMonth, 1));
       setCurrentMonth(subWeeks(currentMonth, 1));
       setCurrentWeek(getWeek(subWeeks(currentMonth, 1)));
     }
     if (btnType === "next") {
-      //console.log(addWeeks(currentMonth, 1));
       setCurrentMonth(addWeeks(currentMonth, 1));
       setCurrentWeek(getWeek(addWeeks(currentMonth, 1)));
     }
@@ -68,13 +66,14 @@ const Calendar = ({ showDetailsHandle }: CalendarProps ) => {
         formattedDate = format(day, dateFormat);
         const cloneDay = day;
         days.push(
-          <div className={`${styles.col} ${styles.cell} ${isSameDay(day, new Date()) ? styles.today : isSameDay(day, selectedDate) ? styles.selected : ""}`}
+          <div className={`${styles.col} ${styles.cell} ${styles.comboDay} ${isSameDay(day, new Date()) ? styles.today : isSameDay(day, selectedDate) ? styles.selected : ""}`}
             key={+day}
             onClick={() => {
               const dayStr = format(cloneDay, "ccc dd MMM yy");
               onDateClickHandle(cloneDay, dayStr);
             }}
           >
+            <span className={styles.jour}>{format(day, "E", { locale: fr }).slice(0 , -1)}</span>
             <span className={styles.number}>{formattedDate}</span>
             <span className={styles.bg}>{formattedDate}</span>
           </div>
@@ -94,10 +93,12 @@ const Calendar = ({ showDetailsHandle }: CalendarProps ) => {
 
   return (
     <div className={styles.calendar}>
-        {renderDays()}
         {renderCells()}
-        <button className={styles.btn} onClick={() => changeWeekHandle("prev")}>Prev</button>
-        <button className={styles.btn} onClick={() => changeWeekHandle("next")}>Next</button>
+        <div className="flex flex-row justify-between">
+          <button className={styles.btn} onClick={() => changeWeekHandle("prev")}><TbChevronLeft /></button>
+          <button className={styles.btn} onClick={() => changeWeekHandle("next")}><TbChevronRight /></button>
+        </div>
+
     </div>
   );
 };

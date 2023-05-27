@@ -13,8 +13,7 @@ const LinearCalendar = () => {
      };
 
     return (
-
-        <Calendar showDetailsHandle={showDetailsHandle} />
+             <Calendar showDetailsHandle={showDetailsHandle} />
         )
 
 

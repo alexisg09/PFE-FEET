@@ -5,7 +5,7 @@
     margin: 0;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     width: 100%;
     gap: 7px;
   }
@@ -73,33 +73,40 @@
     cursor: pointer;
     transition: 0.25s ease-out;
     font-size: 1.5em;
-    border-radius: 20px;
-  
+    border-radius: 10px;
   }
   
-
-  
-  .calendar .body .selected {
-    border-image: linear-gradient(45deg, #1a8fff 0%, #53cbf1 40%);
-    border-image-slice: 1;
-  }
-  .calendar .body .today {
-    border-image: linear-gradient(45deg, #ff1a79 0%, #eb82b3 40%);
-    border-image-slice: 1;
-  }
-
-  .selected {
+  .today {
     background-color: #508C97;
     color: white;
+    border: 1px solid #000000;
   }
   
+ .selected {
+    background-color: #508c976b;
+    color: white;
+  }
+
+  
   .calendar .body .cell .number {
-    position: absolute;
     font-size: 82.5%;
     line-height: 1;
-    top: 0.75em;
-    right: 0.75em;
     font-weight: 700;
+    padding-bottom: 20px;
+
+  }
+
+  .jour {
+    padding-top: 10px;
+    font-size: 82.5%;
+    line-height: 1;
+  }
+
+  .comboDay {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
   
   
