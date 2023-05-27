@@ -19,16 +19,10 @@ const MoodForm = ({ addSymptomFormData, setAddSymptomFormData }: MoodFormProps) 
       ]
 
     const addMoodandRemoveMood = (mood: string) => {
-        //Function that should add or remove a mood from the array
-        //If the mood is already in the array, it should be removed
-        //If the mood is not in the array, it should be added
-      
         if(addSymptomFormData.mood.includes(mood)) {
-          //Remove mood from array
           const newMoodArray = addSymptomFormData.mood.filter((moodInArray) => moodInArray !== mood)
           setAddSymptomFormData({...addSymptomFormData, mood: newMoodArray})
         } else {
-          //Add mood to array
           setAddSymptomFormData({...addSymptomFormData, mood: [...addSymptomFormData.mood, mood]})
         }
     
@@ -37,7 +31,6 @@ const MoodForm = ({ addSymptomFormData, setAddSymptomFormData }: MoodFormProps) 
       const isChecked = (mood: string) => {
         return addSymptomFormData.mood.includes(mood)
       }
-
 
       return (
         <>
@@ -48,11 +41,11 @@ const MoodForm = ({ addSymptomFormData, setAddSymptomFormData }: MoodFormProps) 
         <div className="flex flex-row mt-6 w-full justify-between px-3">
       {moods.map((mood) => (
         <div className="h-16">
-          <IconCheckbox checked={isChecked(mood.mood)} icon={mood.icon} label={mood.mood}
+          <IconCheckbox key={mood.mood} checked={isChecked(mood.mood)} icon={mood.icon} label={mood.mood}
            onChange={() =>{
             addMoodandRemoveMood(mood.mood)
-
-            }} key={mood.mood}/> 
+            }}
+           /> 
         </div>
         ))
       }

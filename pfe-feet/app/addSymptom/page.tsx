@@ -2,9 +2,6 @@
 import MoodForm from "@/components/addSymptoms/MoodForm";
 import SleepForm from "@/components/addSymptoms/SleepForm";
 import BackLink from "@/components/global/BackLink";
-import Subtitle from "@/components/global/Subtitle";
-import Title from "@/components/global/Title";
-import IconCheckbox from "@/components/input/IconCheckbox";
 import { format } from "date-fns";
 import fr from "date-fns/locale/fr";
 import { useState } from "react";
@@ -24,18 +21,12 @@ const addSymptom = () => {
 
   const capitalizedMonth = formattedDate.replace(/^\w/, (c) => c.toUpperCase()); // Mettez en majuscule la première lettre du mois
 
-
-
   const [addSymptomFormData, setAddSymptomFormData] = useState<addSymptomFormType>({
     mood: [],
     symptoms: [],
     sleepDuration: null,
     sleepQuality: '',
   })
-
-
-
-
 
 return (
     <main className="flex min-h-screen min-w-screen flex-col p-2">
