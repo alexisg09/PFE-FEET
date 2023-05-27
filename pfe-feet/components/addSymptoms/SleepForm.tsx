@@ -27,15 +27,19 @@ const SleepForm = ({ addSymptomFormData, setAddSymptomFormData }: SleepFormProps
             <div className="flex flex-col justify-center mt-6 w-[90%] ml-3">
                 <Title title="Sommeil" />
                 <Subtitle subtitle="Combien d'heures avez-vous dormi ?" />
-                <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" />
-                <div className="flex flex-row mt-6 w-full justify-between px-3 h-12">
-                        <IconCheckbox key='good' checked={isChecked('good')} icon='/images/ThumbsUp.svg' label='Bien dormi'
-                            onChange={ () => addAndRemoveSleepQuality('good') } 
-                         />
-                         <IconCheckbox key='bad' checked={isChecked('bad')} icon='/images/ThumbsDown.svg' label='Mal dormi'
-                            onChange={ () => addAndRemoveSleepQuality('bad') } 
-                         />
+                <div className="flex flex-row w-full items-center mt-4">
+                    <input type="number" placeholder="Heures" className="input input-bordered w-1/2 max-w-xs text-[#508C97] bg-white" />
+                    <span className="ml-3">h</span>
+                    <div className="flex flex-row w-full justify-end gap-5 px-3 h-12">
+                            <IconCheckbox key='good' checked={isChecked('good')} icon='/images/ThumbsUp.svg' label='Bien dormi'
+                                onChange={ () => addAndRemoveSleepQuality('good') } 
+                             />
+                             <IconCheckbox key='bad' checked={isChecked('bad')} icon='/images/ThumbsDown.svg' label='Mal dormi'
+                                onChange={ () => addAndRemoveSleepQuality('bad') } 
+                             />
+                    </div>
                 </div>
+                
             </div>
         );
 

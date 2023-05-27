@@ -1,6 +1,7 @@
 'use client';
 import MoodForm from "@/components/addSymptoms/MoodForm";
 import SleepForm from "@/components/addSymptoms/SleepForm";
+import SymptomForm from "@/components/addSymptoms/SymptomForm";
 import BackLink from "@/components/global/BackLink";
 import { format } from "date-fns";
 import fr from "date-fns/locale/fr";
@@ -35,6 +36,7 @@ return (
       </div>
       <MoodForm addSymptomFormData={addSymptomFormData} setAddSymptomFormData={setAddSymptomFormData} />
       <SleepForm addSymptomFormData={addSymptomFormData} setAddSymptomFormData={setAddSymptomFormData} />
+      <SymptomForm addSymptomFormData={addSymptomFormData} setAddSymptomFormData={setAddSymptomFormData} />
 
     </main>
 )

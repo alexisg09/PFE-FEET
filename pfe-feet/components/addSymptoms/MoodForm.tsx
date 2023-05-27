@@ -34,10 +34,10 @@ const MoodForm = ({ addSymptomFormData, setAddSymptomFormData }: MoodFormProps) 
 
       return (
         <>
-        <div className="flex flex-col justify-center mt-6 w-[90%] ml-3">
+        <div className="flex flex-col justify-center mt-4 w-[90%] ml-3">
         <Title title="Humeur" />
         <Subtitle subtitle="Comment vous sentez-vous ?" />
-      </div>
+        </div>
         <div className="flex flex-row mt-6 w-full justify-between px-3">
       {moods.map((mood) => (
         <div className="h-16">
