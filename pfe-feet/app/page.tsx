@@ -1,54 +1,19 @@
 'use client';
 
-import Link from "next/link";
-import Title from "@/components/global/Title";
-import Subtitle from "@/components/global/Subtitle";
-import { useState } from "react";
+import Hello from "@/components/home/Hello";
+import LinearCalendar from "@/components/home/LinearCalendar";
 
 
 
-export default function Home() {
+ const Home = () =>  {
 
-  const [isCheckboxChecked, setIsCheckboxChecked] = useState(false);
 
   return (
     <main className="flex min-h-screen min-w-screen flex-col items-center p-2">
-      <Title title="Accueil" />
-      <Subtitle subtitle="Ajoutez ici ce que vous avez ressenti dans la journée." />
-      <Link href="/calendar">Calendar</Link>
-
+      <Hello name="Alexis"/>
+      <LinearCalendar />
     </main>
   )
 }
 
-
-// export async function getStaticProps() {
-//   const  { data, error } = await queryClient.query({
-//     query: gql
-//     `{
-//       symptoms {
-//         createdAt
-//         id
-//         intensity
-//         isFromSensors
-//         name
-//         symptomCategory {
-//           color {
-//             hex
-//             css
-//           }
-//           id
-//           name
-//         }
-//       }
-//     }`
-//   })
-
-// return {
-//   props: {
-//     data, 
-//     error
-//   }
-// }
-
-// }
+export default Home;

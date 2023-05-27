@@ -1,13 +1,21 @@
+import { useState } from "react";
+import Calendar from "./Calendar";
+
+
 
 
 
 const LinearCalendar = () => {
+    const [showDetails, setShowDetails] = useState(false);
 
-    console.info('LinearCalendar')
+    const showDetailsHandle = () => {
+        setShowDetails(true);
+     };
+
     return (
 
-        <div>Hello</div>
-    )
+        <Calendar showDetailsHandle={showDetailsHandle} />
+        )
 
 
 }
