@@ -6,17 +6,14 @@ import Button from "@/components/input/Button";
 import { format } from "date-fns";
 import fr from "date-fns/locale/fr";
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
 
 
 
-const SymptomsPage = (symptoms: any) => {
+const SymptomsPage = () => {
     const today = new Date();
 
     const formattedDate = format(today, 'd MMMM', { locale: fr });
 
-    const searchParams = useSearchParams();
-    const search = searchParams.get('pathname');
 
 
     return (
@@ -62,12 +59,5 @@ const SymptomsPage = (symptoms: any) => {
 
 }
 
-export const getServerSideProps = ({ query }: any) => {
-    return {
-        props: {
-            symptoms: query.symptoms
-        }
-    }
-}
 
 export default SymptomsPage;
