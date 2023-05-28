@@ -1,3 +1,4 @@
+'use client';
 import { useState } from "react";
 import {
   format,
@@ -16,7 +17,7 @@ import { TbChevronLeft, TbChevronRight } from "react-icons/tb";
 
 
 type CalendarProps = {
-    showDetailsHandle: (dayStr: string) => void;
+    showDetailsHandle?: (dayStr: string) => void;
 }
 
 const Calendar = ({ showDetailsHandle }: CalendarProps ) => {
@@ -37,7 +38,6 @@ const Calendar = ({ showDetailsHandle }: CalendarProps ) => {
 
   const onDateClickHandle = (day: Date, dayStr: string) => {
     setSelectedDate(day); // TODO use day to get data from db
-    showDetailsHandle(dayStr);
   };
 
   const renderDays = () => {

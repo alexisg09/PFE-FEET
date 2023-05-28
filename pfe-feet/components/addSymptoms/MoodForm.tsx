@@ -40,8 +40,8 @@ const MoodForm = ({ addFeelingFormData, setAddFeelingFormData }: MoodFormProps) 
         </div>
         <div className="flex flex-row mt-6 w-full justify-between px-3">
       {moods.map((mood) => (
-        <div className="h-16">
-          <IconCheckbox key={mood.mood} checked={isChecked(mood.mood)} icon={mood.icon} label={mood.mood}
+        <div className="h-16"  key={mood.mood}>
+          <IconCheckbox checked={isChecked(mood.mood)} icon={mood.icon} label={mood.mood}
            onChange={() =>{
             addMoodandRemoveMood(mood.mood)
             }}

@@ -1,44 +1,34 @@
-import Title from "../global/Title";
-import Subtitle from "../global/Subtitle";
-import Checkbox from "../input/Checkbox";
-import { Symptom, addFeelingFormType } from "@/types/types";
+import { addFeelingFormType } from "@/types/types"
+import Button from "../input/Button"
+import FeelingForm from "./FeelingForm"
+import MoodForm from "./MoodForm"
+import SleepForm from "./SleepForm"
 
-export type SymptomFormProps = {
-    addFeelingFormData: addFeelingFormType;
+type SymptomFormProps = {
+    addFeelingFormData: addFeelingFormType
     setAddFeelingFormData: React.Dispatch<React.SetStateAction<addFeelingFormType>>;
+    children: React.ReactNode
+    setShouldDoAction: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const SymptomForm = ({ addFeelingFormData, setAddFeelingFormData }: SymptomFormProps) => {
-    const feelingValues = Object.values(Symptom);
-    feelingValues.sort(); // Trie les éléments par ordre croissant
+const SymptomForm = ({addFeelingFormData, setAddFeelingFormData, children, setShouldDoAction}: SymptomFormProps) => {
 
-    const addAndRemoveSymptom = (symptom: Symptom) => {
-        if (addFeelingFormData.symptoms.includes(symptom)) {
-            setAddFeelingFormData({...addFeelingFormData, symptoms: addFeelingFormData.symptoms.filter((symptom) => symptom !== symptom)})
-        } else {
-            setAddFeelingFormData({...addFeelingFormData, symptoms: [...addFeelingFormData.symptoms, symptom]})
-        }
-    }
+    const handleAddSymptom = () => {
+        setShouldDoAction(true)
+      }
+    
 
-    const isChecked = (symptom: Symptom) => {
-        return addFeelingFormData.symptoms.includes(symptom)
-    }
-
-    return (
-        <>
-            <div className="flex flex-col justify-center mt-6 w-[90%] ml-3">
-                <Title title="Symptômes" />
-                <Subtitle subtitle="Des symptômes en particulier ?" />
-            </div>
-            <div className="flex flex-row mt-4 flex-wrap -full gap-2 px-3">
-             {feelingValues.map((feeling) => (
-                <Checkbox checked={isChecked(feeling)} label={feeling} onChange={() => addAndRemoveSymptom(feeling)} key={feeling}/>
-            ))}
-            </div>
-
-        </>
-        
-    )
+return (
+    <>
+        <MoodForm addFeelingFormData={addFeelingFormData} setAddFeelingFormData={setAddFeelingFormData} />
+        <SleepForm addFeelingFormData={addFeelingFormData} setAddFeelingFormData={setAddFeelingFormData} />
+        <FeelingForm addFeelingFormData={addFeelingFormData} setAddFeelingFormData={setAddFeelingFormData} />
+        <div className="flex justify-center">
+            <Button text="Valider" bgColor="bg-[#1F2937] mt-12 px-8" textColor="white" onClick={() => handleAddSymptom()} />
+        </div>
+        {children}
+    </>
+)
 
 }
 

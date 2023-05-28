@@ -1,20 +1,23 @@
 [
     {
       "id": "1",
-      "title": "Advice 1",
-      "description": "Description 1",
+      "title": "Evitez les fritures",
+      "description": "Evitez les fritures, les aliments gras et les sauces. Préférez les cuissons à la vapeur, à l’eau ou au four.",
       "date": "2023-05-26",
-      "img": "image1.jpg",
-      "backgroundImg": "bg1.jpg",
-      "symptomCategories": ["DIGESTION", "MUSCULAR"]
+      "img": "https://media.discordapp.net/attachments/1112094396591132772/1112097210969100379/friture_flickr_14403818227_21aa305c00_b.png?width=1014&height=676",
+      "backgroundImg": "https://cdn.discordapp.com/attachments/1112094396591132772/1112097614142374098/alimentfrist.png",
+      "symptomCategories": ["DIGESTION"]
     },
     {
       "id": "2",
       "title": "Advice 2",
       "description": "Description 2",
       "date": "2023-05-25",
-      "img": "image2.jpg",
-      "backgroundImg": "bg2.jpg",
+      "img": "https://media.discordapp.net/attachments/1112094396591132772/1112388075637719061/marche-pied.png?width=1118&height=676",
+      "backgroundImg": "https://media.discordapp.net/attachments/1112094396591132772/1112388226007707820/marcheapieds.png?width=1118&height=676",
       "symptomCategories": ["HYDRATION", "CIRCULATORY"]
     }
   ]
+
+
+  

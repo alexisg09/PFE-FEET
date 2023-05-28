@@ -8,8 +8,9 @@ type ButtonProps = {
 
 
 const Button = ({bgColor, textColor, text, onClick}: ButtonProps ) => {
+    
     return (
-        <button className={`w-auto h-10 font-sans uppercase rounded-md ${bgColor} text-${textColor} font-semibold text-xs`} onClick={() => onClick}><span className="px-4">{text}</span></button>
+        <button className={`w-auto h-10 font-sans uppercase rounded-md ${bgColor} text-${textColor} font-semibold text-xs`} onClick={onClick}><span className="px-4">{text}</span></button>
     )
 }
 
