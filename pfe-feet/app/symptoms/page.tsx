@@ -14,8 +14,6 @@ const SymptomsPage = () => {
 
     const formattedDate = format(today, 'd MMMM', { locale: fr });
 
-
-
     return (
         <main className="flex min-h-screen h-full min-w-screen flex-col p-4">
             <div className="flex flex-col items-start flex-wrap">

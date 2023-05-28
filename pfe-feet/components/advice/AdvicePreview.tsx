@@ -12,7 +12,8 @@ type AdvicePreviewProps = {
 
 const AdvicePreview = ({ title, subtext, backgroundImg, img, slug} : AdvicePreviewProps) => {
     return (
-        <Link href={`/advice/${slug}`} as={`/advice/${slug}`}>
+        <Link href={`/advice`} >
+        {/* <Link href={`/advice/${slug}`} as={`/advice/${slug}`}> */}
         <div className="flex flex-row gap-2 justify-start items-center w-full h-20 rounded-lg bg-cover" style={{ backgroundImage: `url(${backgroundImg})`}}>
                 <div className="ml-[0.65rem]">
                 <ImageBox bgImg={img} />
