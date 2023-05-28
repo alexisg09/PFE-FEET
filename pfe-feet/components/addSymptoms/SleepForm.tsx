@@ -1,24 +1,24 @@
-import { addSymptomFormType } from "@/app/addSymptom/page";
 import Title from "../global/Title";
 import Subtitle from "../global/Subtitle";
 import IconCheckbox from "../input/IconCheckbox";
+import { addFeelingFormType } from "@/types/types";
 
 type SleepFormProps = {
-    addSymptomFormData: addSymptomFormType;
-    setAddSymptomFormData: React.Dispatch<React.SetStateAction<addSymptomFormType>>;
+    addFeelingFormData: addFeelingFormType;
+    setAddFeelingFormData: React.Dispatch<React.SetStateAction<addFeelingFormType>>;
 }
 
-const SleepForm = ({ addSymptomFormData, setAddSymptomFormData }: SleepFormProps) => {
+const SleepForm = ({ addFeelingFormData, setAddFeelingFormData }: SleepFormProps) => {
 
     const isChecked = (sleepQuality: string) => {
-       return addSymptomFormData.sleepQuality === sleepQuality
+       return addFeelingFormData.sleepQuality === sleepQuality
     }
 
     const addAndRemoveSleepQuality = (sleepQual: 'good' | 'bad' | '') => {
-    if (addSymptomFormData.sleepQuality === sleepQual) {
-        setAddSymptomFormData({...addSymptomFormData, sleepQuality: ''})
+    if (addFeelingFormData.sleepQuality === sleepQual) {
+        setAddFeelingFormData({...addFeelingFormData, sleepQuality: ''})
     } else {
-        setAddSymptomFormData({...addSymptomFormData, sleepQuality: sleepQual})
+        setAddFeelingFormData({...addFeelingFormData, sleepQuality: sleepQual})
     }
 }
 
@@ -28,7 +28,19 @@ const SleepForm = ({ addSymptomFormData, setAddSymptomFormData }: SleepFormProps
                 <Title title="Sommeil" />
                 <Subtitle subtitle="Combien d'heures avez-vous dormi ?" />
                 <div className="flex flex-row w-full items-center mt-4">
-                    <input type="number" placeholder="Heures" className="input input-bordered w-1/2 max-w-xs text-[#508C97] bg-white" />
+                    <input
+                        type="number"
+                        min="0"
+                        max="24"
+                        value={addFeelingFormData.sleepDuration || ''}
+                        onChange={(e) =>
+                            setAddFeelingFormData({
+                              ...addFeelingFormData,
+                              sleepDuration: parseInt(e.target.value, 10) || null,
+                            })
+                          }
+                        placeholder="Heures"
+                        className="input input-bordered w-1/2 max-w-xs text-[#508C97] bg-white" />
                     <span className="ml-3">h</span>
                     <div className="flex flex-row w-full justify-end gap-5 px-3 h-12">
                             <IconCheckbox key='good' checked={isChecked('good')} icon='/images/ThumbsUp.svg' label='Bien dormi'

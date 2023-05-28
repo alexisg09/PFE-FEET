@@ -1,0 +1,18 @@
+[
+    {
+      "id": "1",
+      "name": "Symptom 1",
+      "intensity": 3,
+      "isFromSensors": true,
+      "symptomCategory": "DIGESTION",
+      "date": "2023-05-26"
+    },
+    {
+      "id": "2",
+      "name": "Symptom 2",
+      "intensity": 2,
+      "isFromSensors": false,
+      "symptomCategory": "MUSCULAR",
+      "date": "2023-05-25"
+    }
+  ]

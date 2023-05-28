@@ -1,15 +1,15 @@
-import { addSymptomFormType } from "@/app/addSymptom/page";
 import IconCheckbox from "../input/IconCheckbox";
 import Title from "../global/Title";
 import Subtitle from "../global/Subtitle";
+import { addFeelingFormType } from "@/types/types";
 
 
 type MoodFormProps = {
-    addSymptomFormData: addSymptomFormType;
-    setAddSymptomFormData: React.Dispatch<React.SetStateAction<addSymptomFormType>>;
+  addFeelingFormData: addFeelingFormType;
+  setAddFeelingFormData: React.Dispatch<React.SetStateAction<addFeelingFormType>>;
 }
 
-const MoodForm = ({ addSymptomFormData, setAddSymptomFormData }: MoodFormProps) => {
+const MoodForm = ({ addFeelingFormData, setAddFeelingFormData }: MoodFormProps) => {
     const moods = [
         {mood: 'Calme', icon: '/images/Leaf.svg'},
         {mood: 'Heureux', icon: '/images/Smiley.svg'},
@@ -19,17 +19,17 @@ const MoodForm = ({ addSymptomFormData, setAddSymptomFormData }: MoodFormProps) 
       ]
 
     const addMoodandRemoveMood = (mood: string) => {
-        if(addSymptomFormData.mood.includes(mood)) {
-          const newMoodArray = addSymptomFormData.mood.filter((moodInArray) => moodInArray !== mood)
-          setAddSymptomFormData({...addSymptomFormData, mood: newMoodArray})
+        if(addFeelingFormData.moods.includes(mood)) {
+          const newMoodArray = addFeelingFormData.moods.filter((moodInArray: string) => moodInArray !== mood)
+          setAddFeelingFormData({...addFeelingFormData, moods: newMoodArray})
         } else {
-          setAddSymptomFormData({...addSymptomFormData, mood: [...addSymptomFormData.mood, mood]})
+          setAddFeelingFormData({...addFeelingFormData, moods: [...addFeelingFormData.moods, mood]})
         }
     
       }
     
       const isChecked = (mood: string) => {
-        return addSymptomFormData.mood.includes(mood)
+        return addFeelingFormData.moods.includes(mood)
       }
 
       return (

@@ -3,7 +3,7 @@ type ButtonProps = {
     bgColor: string;
     textColor: string;
     text: string;
-    onClick?: () => void;
+    onClick?: any;
 }
 
 

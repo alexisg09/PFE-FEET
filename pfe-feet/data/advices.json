@@ -1,0 +1,20 @@
+[
+    {
+      "id": "1",
+      "title": "Advice 1",
+      "description": "Description 1",
+      "date": "2023-05-26",
+      "img": "image1.jpg",
+      "backgroundImg": "bg1.jpg",
+      "symptomCategories": ["DIGESTION", "MUSCULAR"]
+    },
+    {
+      "id": "2",
+      "title": "Advice 2",
+      "description": "Description 2",
+      "date": "2023-05-25",
+      "img": "image2.jpg",
+      "backgroundImg": "bg2.jpg",
+      "symptomCategories": ["HYDRATION", "CIRCULATORY"]
+    }
+  ]
