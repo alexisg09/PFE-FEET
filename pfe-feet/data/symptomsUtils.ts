@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-export function getSymptomsData() {
+export function getSymptomsData(date?: Date) {
   const filePath = path.join(process.cwd(), 'data', 'symptoms.json');
   const fileData = fs.readFileSync(filePath, 'utf8');
   const symptomsData = JSON.parse(fileData);

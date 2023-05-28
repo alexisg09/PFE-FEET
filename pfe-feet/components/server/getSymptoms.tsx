@@ -15,12 +15,6 @@ const GetSymptoms = () => {
 
     const updatedSymptoms = addSymptomData(symptomToAdd);
 
-    console.info('updatedSymptoms', updatedSymptoms)
-    console.info('data', data)
-
-      
-
-
     return (
         <div>
             

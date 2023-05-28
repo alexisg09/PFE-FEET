@@ -2,6 +2,7 @@
     {
       "id": "1",
       "title": "Evitez les fritures",
+      "slug": "evitez-les-fritures",
       "description": "Evitez les fritures, les aliments gras et les sauces. Préférez les cuissons à la vapeur, à l’eau ou au four.",
       "date": "2023-05-26",
       "img": "https://media.discordapp.net/attachments/1112094396591132772/1112097210969100379/friture_flickr_14403818227_21aa305c00_b.png?width=1014&height=676",
@@ -10,7 +11,8 @@
     },
     {
       "id": "2",
-      "title": "Advice 2",
+      "title": "Sortez vous promener",
+      "slug": "sortez-vous-promener",
       "description": "Description 2",
       "date": "2023-05-25",
       "img": "https://media.discordapp.net/attachments/1112094396591132772/1112388075637719061/marche-pied.png?width=1118&height=676",

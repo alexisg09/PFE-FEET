@@ -94,11 +94,10 @@ const Calendar = ({ showDetailsHandle }: CalendarProps ) => {
   return (
     <div className={styles.calendar}>
         {renderCells()}
-        <div className="flex flex-row justify-between">
+        <div className="flex flex-row justify-between pt-2">
           <button className={styles.btn} onClick={() => changeWeekHandle("prev")}><TbChevronLeft /></button>
           <button className={styles.btn} onClick={() => changeWeekHandle("next")}><TbChevronRight /></button>
         </div>
-
     </div>
   );
 };

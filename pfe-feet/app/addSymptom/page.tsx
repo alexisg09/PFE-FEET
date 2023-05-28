@@ -8,9 +8,9 @@ import fr from "date-fns/locale/fr";
 import { useState } from "react";
 
 const addSymptom = () => {
-  const today = new Date(); // Obtenez la date d'aujourd'hui
+  const today = new Date();
 
-  const formattedDate = format(today, 'd MMMM', { locale: fr }); // Formattez la date avec la configuration locale
+  const formattedDate = format(today, 'd MMMM', { locale: fr }); 
 
   const [shouldDoAction, setShouldDoAction] = useState<boolean>(false);
 
@@ -30,7 +30,8 @@ const addSymptom = () => {
         <BackLink path="/" title={formattedDate} />
       </div>
       <SymptomForm addFeelingFormData={addFeelingFormData} setAddFeelingFormData={setAddFeelingFormData} setShouldDoAction={setShouldDoAction}>
-        <AddSymptom  data={addFeelingFormData} shouldDoAction={shouldDoAction}/>
+        {/* <AddSymptom  data={addFeelingFormData} shouldDoAction={shouldDoAction}/> */}
+        {/* inclure le bouton submit pôur ap^pêler le back */}
       </SymptomForm>
     </main>
   )
