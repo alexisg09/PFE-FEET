@@ -1,110 +1,105 @@
 [
-    {
-        "id": "1",
-        "name": "Symptom 1",
-        "intensity": 3,
-        "isFromSensors": true,
-        "symptomCategory": "DIGESTION",
-        "date": "2023-05-26",
-        "symptoms": [
-            "Nez bouché",
-            "Difficultés respiratoires"
-        ]
-    },
-    {
-        "id": "2",
-        "name": "Symptom 2",
-        "intensity": 2,
-        "isFromSensors": true,
-        "symptomCategory": "MUSCULAR",
-        "date": "2023-05-25",
-        "symptoms": [
-            "Nez bouché",
-            "Difficultés respiratoires"
-        ]
-    },
-    {
-        "id": "3",
-        "date": "2023-05-28T13:59:00.379Z",
-        "moods": [],
-        "sleepDuration": 5,
-        "isFromSensors": false,
-        "sleepQuality": "good",
-        "symptoms": [
-            "Nez bouché",
-            "Difficultés respiratoires"
-        ]
-    },
-    {
-        "id": "4",
-        "date": "2023-05-28T14:30:59.746Z",
-        "moods": [],
-        "isFromSensors": false,
-        "sleepDuration": 5,
-        "sleepQuality": "good",
-        "symptoms": [
-            "Nez bouché",
-            "Difficultés respiratoires"
-        ]
-    },
-    {
-        "id": "5",
-        "date": "2023-05-28T14:31:00.878Z",
-        "isFromSensors": false,
-        "moods": [],
-        "sleepDuration": 5,
-        "sleepQuality": "good",
-        "symptoms": [
-            "Nez bouché",
-            "Difficultés respiratoires"
-        ]
-    },
-    {
-        "id": "6",
-        "date": "2023-05-28T14:35:01.589Z",
-        "isFromSensors": false,
-        "moods": [],
-        "sleepDuration": 5,
-        "sleepQuality": "good",
-        "symptoms": [
-            "Nez bouché",
-            "Difficultés respiratoires"
-        ]
-    },
-    {
-        "id": "7",
-        "date": "2023-05-28T14:35:14.319Z",
-        "isFromSensors": false,
-        "moods": [],
-        "sleepDuration": 5,
-        "sleepQuality": "good",
-        "symptoms": [
-            "Nez bouché",
-            "Difficultés respiratoires"
-        ]
-    },
-    {
-        "id": "8",
-        "date": "2023-05-28T14:35:16.683Z",
-        "isFromSensors": false,
-        "moods": [],
-        "sleepDuration": 5,
-        "sleepQuality": "good",
-        "symptoms": [
-            "Nez bouché",
-            "Difficultés respiratoires"
-        ]
-    },
-    {
-        "id": "9",
-        "date": "2023-05-28T14:35:17.042Z",
-        "isFromSensors": false,
-        "moods": [],
-        "sleepDuration": 5,
-        "sleepQuality": "good",
-        "symptoms": [
-            "Nez bouché",
-            "Difficultés respiratoires"
-        ]
-    }
+  {
+    "id": "3",
+    "date": "2023-05-28T13:59:00.379Z",
+    "moods": [],
+    "sleepDuration": 5,
+    "isFromSensors": false,
+    "sleepQuality": "good",
+    "symptoms": ["Nez bouché", "Difficultés respiratoires"]
+  },
+  {
+    "id": "4",
+    "date": "2023-05-28T14:30:59.746Z",
+    "moods": [],
+    "isFromSensors": false,
+    "sleepDuration": 5,
+    "sleepQuality": "good",
+    "symptoms": ["Nez bouché", "Difficultés respiratoires"]
+  },
+  {
+    "id": "5",
+    "date": "2023-05-28T14:31:00.878Z",
+    "isFromSensors": false,
+    "moods": [],
+    "sleepDuration": 5,
+    "sleepQuality": "good",
+    "symptoms": ["Nez bouché", "Difficultés respiratoires"]
+  },
+  {
+    "id": "6",
+    "date": "2023-05-28T14:35:01.589Z",
+    "isFromSensors": false,
+    "moods": [],
+    "sleepDuration": 5,
+    "sleepQuality": "good",
+    "symptoms": ["Nez bouché", "Difficultés respiratoires"]
+  },
+  {
+    "id": "7",
+    "date": "2023-05-28T14:35:14.319Z",
+    "isFromSensors": false,
+    "moods": [],
+    "sleepDuration": 5,
+    "sleepQuality": "good",
+    "symptoms": ["Nez bouché", "Difficultés respiratoires"]
+  },
+  {
+    "id": "8",
+    "date": "2023-05-28T14:35:16.683Z",
+    "isFromSensors": false,
+    "moods": [],
+    "sleepDuration": 5,
+    "sleepQuality": "good",
+    "symptoms": ["Nez bouché", "Difficultés respiratoires"]
+  },
+  {
+    "id": "9",
+    "date": "2023-05-28T14:35:17.042Z",
+    "isFromSensors": false,
+    "moods": [],
+    "sleepDuration": 5,
+    "sleepQuality": "good",
+    "symptoms": ["Nez bouché", "Difficultés respiratoires"]
+  },
+  {
+    "id": "1",
+    "bgImg": "https://media.discordapp.net/attachments/1112094396591132772/1112094991980974090/migraine-48c6a5197807bded.png?width=1014&height=676",
+    "name": "Symptom 1",
+    "intensity": 3,
+    "isFromSensors": true,
+    "symptomCategory": "DIGESTION",
+    "date": "2023-05-26",
+    "symptoms": ["Nez bouché", "Difficultés respiratoires"]
+  },
+  {
+    "id": "2",
+    "name": "Symptom 2",
+    "bgImg": "https://media.discordapp.net/attachments/1112094396591132772/1116297927443357797/douleur20mollet.png",
+    "intensity": 2,
+    "isFromSensors": true,
+    "symptomCategory": "MUSCULAR",
+    "date": "2023-05-25",
+    "symptoms": ["Nez bouché", "Difficultés respiratoires"]
+  },
+  {
+    "id": "2",
+    "name": "Symptom 2",
+    "bgImg": "https://media.discordapp.net/attachments/1112094396591132772/1116298055633879100/douleur-mollet.png",
+    "intensity": 2,
+    "isFromSensors": true,
+    "symptomCategory": "MUSCULAR",
+    "date": "2023-05-25",
+    "symptoms": ["Nez bouché", "Difficultés respiratoires"]
+  },
+  {
+    "id": "2",
+    "name": "Symptom 2",
+    "bgImg": "https://media.discordapp.net/attachments/1112094396591132772/1116298198739337327/i105411-engourdissements-fourmillements-symptome.png?width=1039&height=584",
+    "intensity": 2,
+    "isFromSensors": true,
+    "symptomCategory": "MUSCULAR",
+    "date": "2023-05-25",
+    "symptoms": ["Nez bouché", "Difficultés respiratoires"]
+  }
 ]
