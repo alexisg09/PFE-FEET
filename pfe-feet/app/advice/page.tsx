@@ -47,7 +47,7 @@ const AdvicePage = () => {
           gras
         </p>
       </div>
-      <div className="pt-4">
+      <div className="pt-4 flex flex-col w-full gap-2">
         {advices.map((advice: any, index: number) => (
           <AdvicePreview {...advice} key={+index} />
         ))}
