@@ -1,25 +1,95 @@
 [
-    {
-      "id": "1",
-      "title": "Evitez les aliments frits",
-      "slug": "evitez-les-fritures",
-      "description": "Evitez les fritures, les aliments gras et les sauces. Préférez les cuissons à la vapeur, à l’eau ou au four.",
-      "date": "2023-05-26",
-      "img": "https://media.discordapp.net/attachments/1112094396591132772/1112097210969100379/friture_flickr_14403818227_21aa305c00_b.png?width=1014&height=676",
-      "backgroundImg": "https://cdn.discordapp.com/attachments/1112094396591132772/1112097614142374098/alimentfrist.png",
-      "symptomCategories": ["DIGESTION"]
-    },
-    {
-      "id": "2",
-      "title": "Sortez vous promener",
-      "slug": "sortez-vous-promener",
-      "description": "Description 2",
-      "date": "2023-05-25",
-      "img": "https://media.discordapp.net/attachments/1112094396591132772/1112388075637719061/marche-pied.png?width=1118&height=676",
-      "backgroundImg": "https://media.discordapp.net/attachments/1112094396591132772/1112388226007707820/marcheapieds.png?width=1118&height=676",
-      "symptomCategories": ["HYDRATION", "CIRCULATORY"]
-    }
-  ]
+  {
+    "id": "1",
+    "title": "Evitez les aliments frits",
+    "slug": "evitez-les-fritures",
+    "description": "Evitez les fritures, les aliments gras et les sauces. Préférez les cuissons à la vapeur, à l’eau ou au four.",
+    "date": "2023-05-26",
+    "img": "https://media.discordapp.net/attachments/1112094396591132772/1112097210969100379/friture_flickr_14403818227_21aa305c00_b.png?width=1014&height=676",
+    "backgroundImg": "https://cdn.discordapp.com/attachments/1112094396591132772/1112097614142374098/alimentfrist.png",
+    "symptomCategories": ["DIGESTION"]
+  },
+  {
+    "id": "2",
+    "title": "Sortez vous promener",
+    "slug": "sortez-vous-promener",
+    "description": "Description 2",
+    "date": "2023-05-25",
+    "img": "https://media.discordapp.net/attachments/1112094396591132772/1112388075637719061/marche-pied.png?width=1118&height=676",
+    "backgroundImg": "https://media.discordapp.net/attachments/1112094396591132772/1112388226007707820/marcheapieds.png?width=1118&height=676",
+    "symptomCategories": ["HYDRATION", "CIRCULATORY"]
+  },
+  {
+    "id": "23",
+    "title": "Mangez vert pour une meilleure digestion",
+    "slug": "mangez-legumes-verts",
+    "description": "Les légumes verts comme les épinards, le brocoli et la laitue sont riches en fibres et en nutriments essentiels. Ils favorisent une bonne digestion en améliorant le transit intestinal. Ajoutez une portion de légumes verts à vos repas quotidiens pour maintenir un système digestif sain.",
+    "date": "2023-06-08",
+    "img": "https://media.discordapp.net/attachments/1112094396591132772/1116290171533525052/Legumes-verts.jpeg?width=878&height=585",
+    "backgroundImg": "https://media.discordapp.net/attachments/1112094396591132772/1116291594417623050/Group_1000004213.png?width=876&height=585",
+    "symptomCategories": ["DIGESTION"]
+  },
 
+  {
+    "id": "24",
+    "title": "Hydratez-vous régulièrement",
+    "slug": "hydratez-vous-regulierement",
+    "description": "La déshydratation peut causer divers problèmes de santé, tels que des maux de tête, une fatigue accrue et une diminution des performances cognitives. Assurez-vous de boire suffisamment d'eau tout au long de la journée pour maintenir une bonne hydratation. Portez une bouteille d'eau avec vous et faites-en une habitude de boire régulièrement.",
+    "date": "2023-06-08",
+    "img": "https://media.discordapp.net/attachments/1112094396591132772/1116290171235737640/eau-bonhomme.jpeg",
+    "backgroundImg": "https://media.discordapp.net/attachments/1112094396591132772/1116291593180291132/Group_1000004209.png",
+    "symptomCategories": ["HYDRATION"]
+  },
+  {
+    "id": "5",
+    "title": "Renforcez vos muscles",
+    "slug": "renforcez-vos-muscles",
+    "description": "La musculation est un excellent moyen de renforcer vos muscles et de maintenir une bonne santé musculaire. Pratiquez des exercices de musculation régulièrement pour améliorer votre force, votre posture et votre résistance. Consultez un professionnel de la santé ou un entraîneur personnel pour obtenir des conseils sur les exercices adaptés à vos besoins.",
+    "date": "2023-06-08",
+    "img": "https://media.discordapp.net/attachments/1112094396591132772/1116290171785195621/renfo-1024x487.jpeg",
+    "backgroundImg": "https://media.discordapp.net/attachments/1112094396591132772/1116291594044317717/Group_1000004212.png",
+    "symptomCategories": ["MUSCULAR"]
+  },
+  {
+    "id": "6",
+    "title": "Privilégiez les aliments riches en fibres",
+    "slug": "aliments-riches-en-fibres",
+    "description": "Les aliments riches en fibres, tels que les céréales complètes, les légumes et les fruits, sont essentiels pour maintenir une bonne digestion. Les fibres facilitent le transit intestinal et préviennent la constipation. Incluez des aliments riches en fibres dans votre alimentation quotidienne pour favoriser une digestion saine.",
+    "date": "2023-06-08",
+    "img": "https://media.discordapp.net/attachments/1112094396591132772/1116290170627555369/33165-10-aliments-plus-riches-en-fibres.png",
+    "backgroundImg": "https://media.discordapp.net/attachments/1112094396591132772/1116291592916058152/Group_1000004208.png",
+    "symptomCategories": ["DIGESTION"]
+  },
+  {
+    "id": "8",
+    "title": "Maintenez une bonne hydratation",
+    "slug": "bonne-hydratation",
+    "description": "L'eau est essentielle au bon fonctionnement de votre corps. Assurez-vous de boire suffisamment d'eau tout au long de la journée pour maintenir une bonne hydratation. L'eau aide à transporter les nutriments, régule la température corporelle et élimine les toxines. Buvez de l'eau régulièrement pour rester hydraté(e).",
+    "date": "2023-06-08",
+    "img": "https://media.discordapp.net/attachments/1112094396591132772/1116290171235737640/eau-bonhomme.jpeg",
+    "backgroundImg": "https://media.discordapp.net/attachments/1112094396591132772/1116291593180291132/Group_1000004209.png",
+    "symptomCategories": ["HYDRATION"]
+  },
 
-  
+  {
+    "id": "9",
+    "title": "Limitez votre consommation de sel",
+    "slug": "limitation-consommation-sel",
+    "description": "Une consommation excessive de sel peut augmenter la pression sanguine et mettre une pression supplémentaire sur votre système circulatoire. Limitez votre consommation de sel en évitant les aliments salés et en privilégiant des alternatives plus saines. Utilisez des épices et des herbes pour rehausser la saveur de vos plats.",
+    "date": "2023-06-08",
+    "img": "https://media.discordapp.net/attachments/1112094396591132772/1116292723381637120/licensed-image.jpeg?width=878&height=585",
+    "backgroundImg": "https://media.discordapp.net/attachments/1112094396591132772/1116292636710547506/Group_1000004208.png?width=878&height=585",
+    "symptomCategories": ["CIRCULATORY"]
+  },
+
+  {
+    "id": "10",
+    "title": "Pratiquez des exercices d'étirement",
+    "slug": "exercices-etirement",
+    "description": "Les exercices d'étirement réguliers sont importants pour maintenir la flexibilité musculaire et prévenir les douleurs musculaires. Consacrez quelques minutes chaque jour à des étirements doux pour assouplir vos muscles et améliorer votre mobilité. Cela peut également vous aider à vous détendre et à réduire le stress.",
+    "date": "2023-06-08",
+    "img": "https://media.discordapp.net/attachments/1112094396591132772/1116290172007489556/Sans-titre-55-1024x683.jpeg?width=877&height=585",
+    "backgroundImg": "https://media.discordapp.net/attachments/1112094396591132772/1116291593771696168/Group_1000004211.png",
+    "symptomCategories": ["MUSCULAR"]
+  }
+]
